@@ -1,0 +1,38 @@
+<!-- Here I'll be trying to understand how chain selectors work.-->
+
+<!-- According to the TOP website, we can group up certain
+qualities that are shared amongst other classes/IDs/types. 
+The following can be done.--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grouping Selectors Example </title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .text1,.text2{
+            font-size: 3em;
+            font-weight: 300;
+        }
+        .text1{
+            color: red;
+        }
+        .text2{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="text1">THE LÄND SUCKS </div>
+    <div class="text2"> MEXICO IS WAY BETTER</div>
+    
+</body>
+</html>
+
+<!-- What happens in here? Basically we can add properties that affect both text1 and text2, meaning they share 
+some of these properties. We can still single out text1 and text2 and adding their own custom effects. -->
